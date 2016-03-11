@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <meta name="google-site-verification" content="fcnrbrpQfdBT0yQAtKojm8bTMd5hfIcnnTFJxyUXLV8" />
+
+    <title>Hark with XSocket Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/harkxsocket/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div id='remoteuserspeaking' class='notification' style='display:none'>Remote is Speaking</div>
+      <div class="row">
+        <div class="col-xs-6"><h3>Remote Videos</h3></div>
+      </div>
+
+      <div class="jumbotron row">
+           <div id="remotevideos"> 
+           </div> 
+      </div>
+
+     <!-- /container -->
+      <div id="localVideo">
+          <div class="row">
+                <video id="localVideoStream"  class="vid-circle" width="200" height="200" autoplay muted></video>
+                <div id='userSpeaking' class='notification' style='display:none'>You are Speaking</div>
+          </div>
+      </div>
+
+  
+</div>
+    <script src="/harkxsocket/Scripts/main.js"></script>
+
+  </body>
+</html>
